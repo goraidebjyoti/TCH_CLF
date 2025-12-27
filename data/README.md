@@ -1,4 +1,3 @@
-
 # TCH_CLF – Data Documentation
 
 This document describes the **data directory structure, file formats, and data provenance** used by the TCH_CLF pipeline.
