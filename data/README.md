@@ -184,19 +184,6 @@ The same structure applies to `data/2022/`.
 
 ---
 
-## Important Notes
-
-- Do **not** commit:
-  - Clinical trial corpus
-  - Parsed trial files
-  - Reasoning outputs
-  - Model checkpoints
-  - Inference runs
-- Use `.gitignore` to exclude large or generated files
-- File paths in scripts assume the directory structure documented here
-
----
-
 ## Questions
 
 If you encounter missing-path or missing-file errors, verify that:
