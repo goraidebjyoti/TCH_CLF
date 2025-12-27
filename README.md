@@ -144,6 +144,23 @@ Raw LLM outputs are sanitized using a shared cleaning script before downstream u
 
 ---
 
+## Note on LLM Choice and Reproducibility
+
+**Important:** All reasoning and relevance annotations in this repository were generated using  
+**DeepSeek-R1-Distill-Qwen-32B**.
+
+The teacher classifier is trained **directly on these LLM-generated signals**.  
+Changing the LLM (or its prompting strategy) will alter the distribution, structure, and style of the generated reasoning and relevance labels, and therefore **invalidate direct comparison with the results reported in the paper**.
+
+Additionally, different LLMs employ **different chat templates, tokenization schemes, and instruction-following conventions** (e.g., system/user roles, special tokens, or reasoning delimiters). As a result, **code-level modifications may be required** when substituting the LLM, including but not limited to:
+- Prompt formatting and chat template construction
+- Input tokenization and special token handling
+- Output parsing and JSON extraction logic
+
+Users may experiment with alternative LLMs for exploratory or extension purposes; however, to **faithfully reproduce the reported results**, the same LLM, prompt templates, and output-processing logic should be used.
+
+---
+
 ## Teacher Model Training
 
 - Encoder: `yikuan8/Clinical-Longformer`
