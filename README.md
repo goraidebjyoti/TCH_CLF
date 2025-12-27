@@ -1,4 +1,3 @@
-
 # TCH_CLF  
 **Reasoning-Augmented Teacher Classifier for Clinical Trial Relevance**
 
