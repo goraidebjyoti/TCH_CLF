@@ -104,7 +104,8 @@ Expected format:
 }
 ```
 
-Users must obtain this corpus independently and place it at:
+Users must obtain this corpus from ClinicalTrial.gov independently, 
+then convert it to the required format as per the codes and place it at:
 ```
 data/clinicaltrials/corpus.jsonl
 ```
